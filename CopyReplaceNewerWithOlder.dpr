@@ -118,7 +118,7 @@ begin
              end
              else
              begin
-                if doOut then Writeln('Error of forcing directories 1');
+                if doOut then Writeln('Error of forcing directories 2');
                 //Memo1.Lines.Add( 'Error of forcing directories 1' );
              end;
       end;
