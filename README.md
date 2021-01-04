@@ -13,7 +13,7 @@
 > 
 > >    - "SouceFolderName" - Source folder name with full path, can be local network location
 > >       - "C:\temp\MSO2007"
-> >       - "\\10.99.129.64\c$\temp\MSO2007"
+> >       - "\\\\10.99.129.64\c$\temp\MSO2007"
 > 
 > >    - "DestFolderName" - Destibation folder name with full path, [can be local network location] (not tested)  
 > 
