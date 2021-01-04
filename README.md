@@ -2,9 +2,9 @@
 
 ## Utility for copying files from one location to another, but was overwrites NEWER files with OLDER, and delete new created files.
 
-1. Check files list, copy all unexisted files from 'SouceFolderName' to 'DestFolderName'.
-2. Replace newer files in 'DestFolderName' with **older** files from 'SouceFolderName'. !!!OWERWITES NEWER FILES WITH OLDER!!!
-3. Remove all unexisted in 'DestFolderName', for matching file list with 'SouceFolderName'
+1. Check files list, COPY ALL UNEXISTED FILES from 'SouceFolderName' to 'DestFolderName'.
+2. REPLACE newer files in 'DestFolderName' with **OLDER** files from 'SouceFolderName'. !!!OVERWITES NEWER FILES WITH OLDER!!!
+3. REMOVE all unexisted in 'DestFolderName', for matching file list with 'SouceFolderName'
 
 
 > Usage from command line:
