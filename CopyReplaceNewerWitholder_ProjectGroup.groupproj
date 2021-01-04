@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6001A529-0898-464A-AD83-703028CDEAB4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CopyReplaceNewerWithOlder.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NetCopy.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CopyReplaceNewerWithOlder">
+        <MSBuild Projects="CopyReplaceNewerWithOlder.dproj"/>
+    </Target>
+    <Target Name="CopyReplaceNewerWithOlder:Clean">
+        <MSBuild Projects="CopyReplaceNewerWithOlder.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CopyReplaceNewerWithOlder:Make">
+        <MSBuild Projects="CopyReplaceNewerWithOlder.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NetCopy">
+        <MSBuild Projects="NetCopy.dproj"/>
+    </Target>
+    <Target Name="NetCopy:Clean">
+        <MSBuild Projects="NetCopy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NetCopy:Make">
+        <MSBuild Projects="NetCopy.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CopyReplaceNewerWithOlder;NetCopy"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CopyReplaceNewerWithOlder:Clean;NetCopy:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CopyReplaceNewerWithOlder:Make;NetCopy:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

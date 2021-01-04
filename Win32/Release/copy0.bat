@@ -1,0 +1,1 @@
+CopyReplaceNewerWithOlder.exe "C:\temp\MSO2007" "C:\Users\qqq\Desktop\temp" -nowait -notextout

@@ -1,0 +1,25 @@
+# Local directories
+*__history/*
+
+# .tfstate files
+#*.tfstate
+#*.tfstate.*
+
+*WorkTime.rsm*
+
+# Crash log files
+crash.log
+
+# Ignore any .tfvars files that are generated automatically for each Terraform run. Most
+# .tfvars files are managed as part of configuration and so should be included in
+# version control.
+#
+# example.tfvars
+
+
+# Include override files you do wish to add to version control using negated pattern
+#
+!*.keep*
+
+# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
+# example: *tfplan*
