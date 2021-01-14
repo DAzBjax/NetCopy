@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.901,C:\Users\qqq\Desktop\NetCopy\Project1.dproj=C:\Users\qqq\Desktop\NetCopy\NetCopy.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.888,C:\Users\qqq\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\qqq\Desktop\NetCopy\Project1.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.901,C:\Users\qqq\Desktop\NetCopy\Project1.dproj=C:\Users\qqq\Desktop\NetCopy\NetCopy.dproj</Transaction>
     <Transaction>1899.12.30 00:00:00.000.288,C:\Users\qqq\Documents\RAD Studio\Projects\Unit1.dfm=C:\Users\qqq\Desktop\NetCopy\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.429,=C:\Users\qqq\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.674,R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\TestForm_Unit.pas=R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.674,R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\TestForm_Unit.dfm=R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\Unit1.dfm</Transaction>
     <Transaction>1899.12.30 00:00:00.000.288,C:\Users\qqq\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\qqq\Desktop\NetCopy\Unit1.pas</Transaction>
-    <Transaction>2021.01.04 14:02:52.674,R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\TestForm_Unit.dfm=R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\Unit1.dfm</Transaction>
-    <Transaction>2021.01.04 14:02:52.674,R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\TestForm_Unit.pas=R:\Work.Projects\Delphi\NetCopy\NetCopy.D.XE4\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.429,=C:\Users\qqq\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
   </Transactions>
 </BorlandProject>

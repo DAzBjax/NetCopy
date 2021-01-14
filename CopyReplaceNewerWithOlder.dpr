@@ -29,6 +29,7 @@ var
   lastWriteTimeSource, lastWriteTimeDest : TDateTime;
 
   doOut : boolean;
+  mode : boolean;
 begin
   try
 
@@ -42,7 +43,10 @@ begin
 
    if ((Length(baseFilesDir)=0) or (Length(targetFilesDir)=0)) then exit;
 
-   doOut := (ParamStr(4)<>'-notextout');
+   doOut := CompareText(ParamStr(4),'-notextout') <> 0;
+
+   mode := false;
+   mode := CompareText(ParamStr(5), '-AllDiffs') = 0;
 
 
    filesArray := TDirectory.GetFiles(baseFilesDir, '*', TSearchOption.soAllDirectories);
@@ -84,7 +88,7 @@ begin
          lastWriteTimeDest := TFile.GetLastWriteTimeUtc(fullTargetFilename);
 
          //если время записи источника меньше, чем назначения (перезапись более новых файлов)
-         if (lastWriteTimeSource < lastWriteTimeDest) then
+         if ((lastWriteTimeSource < lastWriteTimeDest) or (mode and (lastWriteTimeSource <> lastWriteTimeDest))) then
          begin
              if (ForceDirectories(ExtractFilePath(fullTargetFilename))) then
              begin
@@ -145,7 +149,7 @@ begin
    end;
 
 
-   if (ParamStr(3)='-wait') then
+   if (CompareText(ParamStr(3),'-wait') = 0) then
    begin
       Writeln('done');
       readln;
